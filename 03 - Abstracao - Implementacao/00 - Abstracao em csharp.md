@@ -252,9 +252,11 @@ public class NomeClasse : ClasseHerdada, InterfaceImplementada, InterfaceImpleme
 Pouquíssimas linguagens permitem uma coisa chamada herança múltipla, que é quando você pode ter uma classe filha herdando de mais de uma classe pai.
 Em c# isso não é possível, você pode herdar apenas de uma classe, mas pode implementar muitas interfaces.
 
+## Antes do exercício
+Passar evolução de interfaces
 
 --- 
-Exercício:
+Exercício no papel:
 
 Vamos desenhar com o que aprendemos até agora uma estrutura de consulta de extratos.
 

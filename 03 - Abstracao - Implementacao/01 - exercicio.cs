@@ -87,5 +87,6 @@ public class Loan
 // Crie uma classe de serviço para executar transações bancárias, uma para transferência outra para pagamento de cartão de crédito.
 // Depois aplique o uso com o código ruim, e em seguida com o código novo.
 
+
 // Crie uma classe de serviço para executar empréstimos bancários, uma para empréstimo pessoal outra para hipoteca.
 // Depois aplique o uso com o código ruim, e em seguida com o código novo.
