@@ -49,7 +49,7 @@ Bom, agora vamos pensar que este conjunto de classes sejam utilizadas para repre
 
 Fazendo o caminho oposto, os objetos de extrato para Carlos e para Marcos tem a mesma instância de classe. Ambas instâncias de classe de Carlos e Marcos compartilham os mesmos conjuntos de atributos, mas são diferentes quanto ao conteúdo destes atributos.
 
-Detalhando um pouco mais, ambos os objetos são do tipo extrato, porém uma instância deste objeto chama Carlos, a outra instância do mesmo objeto chama Carlos.
+Detalhando um pouco mais, ambos os objetos são do tipo extrato, porém uma instância deste objeto chama Carlos, a outra instância do mesmo objeto chama Marcos.
 
 Definição trazida do Wikipedia:
 

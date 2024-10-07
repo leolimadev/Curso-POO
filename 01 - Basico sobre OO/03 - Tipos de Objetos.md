@@ -19,7 +19,7 @@ Também um breve resumo, nos aprofundaremos mais para frente.
 
 Interfaces, diferente das classes abstratas não são classes, mas sim um tipo de contrato.
 Funciona muito semelhante ao uso das classes abstratas, porém em classes abstratas você pode eventualmente ter alguma implementação.
-Já em interfaces você tem apenas a definição.
+Já em interfaces você deve ter apenas a definição.
 
 Exemplificando, uma classe abstrata pode ter um método que faz alguma coisa, a classe filha da classe abstrata pode fazer uso deste método ou pode sobrescrever ele. Já na interface temos apenas uma declaração que significa o seguinte: "Meu amigo, vamos fazer um acordo, você precisa ao implementar a minha interface, de um método que faz isso, retorna aquilo, recebe X parâmetros."
 
@@ -27,4 +27,4 @@ O importante aqui é entender a diferença, mais para frente com o uso naturalme
 </br></br></br>
 ## Curiosidades
 
-***Linguagens dinamicas tendem a não ter o conceito de classe abstrata.***
+***Linguagens dinâmicas tendem a não ter o conceito de classe abstrata.***

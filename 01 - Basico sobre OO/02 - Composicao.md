@@ -82,6 +82,7 @@ protegido (protected): protegido significa que ele mantém o comportamento do pr
 > *Obs.:*  Herança será explicada em detalhes mais para frente.
 
 > *Obs.:* Quando você deixa um método sem visibilidade definida em c#, por padrão a visibilidade é privada, para proteger o acesso a informação.
+> *Obs.:* Já os tipos de nível superior como classes, que não estão aninhados em outros tipos, podem ter apenas a acessibilidade internal ou public. A acessibilidade de padrão para esses tipos é internal.
 
 ```csharp
 
@@ -102,6 +103,56 @@ public class Extrato {
 
 ```
 
+## Curiosidades
+
+Lista de níveis de acesso:
+
+| Acessibilidade | Significado |
+|--|--|
+| public |	O acesso não é restrito|
+| protected |	O acesso é limitado à classe que os contém ou aos tipos derivados da classe que os contém|
+| internal |	O acesso é limitado ao assembly atual|
+| protected | internal	O acesso é limitado ao assembly atual ou aos tipos derivados da classe que os contém|
+| private |	O acesso é limitado ao tipo recipiente|
+| private | protected	O acesso é limitado à classe que o contém ou a tipos derivados da classe que o contém no assembly atual|
+
+> Somente um modificador de acesso é permitido para um membro ou tipo, exceto quando você usa as combinações protected internal e private protected.
+
+Lista de níveis de acesso para tipos aninhados:
+
+| Membros de | Acessibilidade de membro Padrão | Acessibilidades permitidas |
+|--|--|--|
+|enum|	public|	Nenhum|
+|--|--|--|
+|class|	private|	public|
+|||protected|
+|||internal|
+|||private|
+|||protected internal|
+|||private protected|
+|interface|	public|	public|
+|||protected|
+|||internal|
+|||private*|
+|||protected internal|
+|||private protected|
+|--|--|--|
+|struct|	private|	public|
+|||internal|
+|||private|
+
+> Um membro interface com acessibilidade private deve ter uma implementação padrão.
+
+Antes do exercício em tempo de aula explicar (ATENÇÃO QUE EXPLICAÇÃO NÃO ESTA NA DOCUMENTAÇÃO):
+
+- Camadas de aplicação.
+- Modelo anêmico vs modelo rico.
+- Diferença entre class e struct (opcional);
+
+## Referências:
+https://learn.microsoft.com/pt-br/dotnet/csharp/programming-guide/classes-and-structs/access-modifiers </br>
+https://learn.microsoft.com/pt-br/dotnet/csharp/language-reference/keywords/accessibility-levels
+
 ## Exercício:
 
 Com base nas classes definidas no arquivo exercício.cs vamos:
@@ -114,4 +165,4 @@ Com base nas classes definidas no arquivo exercício.cs vamos:
 
 4- Crie um método novo que deve ter acesso público para devolver uma lista de strings com saldo atualizado diariamente.
 
-30 minutos para execução - (Item 4 é opcional)
+Dica: Tentem utilizar o conceito de composição com classes aninhadas para calculo de saldo.
